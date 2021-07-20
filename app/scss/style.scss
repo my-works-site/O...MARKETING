@@ -3,65 +3,84 @@
 @import "reset";
 @import "libs";
 @import "global";
+
 .header-top__inner {
-    padding-bottom: 29px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  padding-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .menu-list {
-    display: flex;
-    &__item+&__item {
-        margin-left: 32px;
+  display: flex;
+  &__item + &__item {
+    margin-left: 32px;
+  }
+  &__link {
+    padding: 0 9px 9px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #373a39;
+    letter-spacing: 0.6px;
+    @extend %Raleway-700;
+    transition: all 0.5s;
+    &:hover {
+      border-bottom: 1px solid $accent;
     }
-    &__link {
-        padding: 0 9px 9px;
-        font-size: 12px;
-        line-height: 14px;
-        text-transform: uppercase;
-        color: #373a39;
-        letter-spacing: 0.6px;
-        @extend %Raleway-700;
-        transition: all .5s;
-        &:hover {
-            border-bottom: 1px solid $accent;
-        }
-    }
+  }
 }
 
 .header-content {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: calc(100vh - 93px);
+  background-image: url("../images/header-bg.jpg");
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     min-height: calc(100vh - 93px);
-    background-image: url('../images/header-bg.jpg');
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        min-height: calc(100vh - 93px);
-        .header-title {
-            padding-top: 130px;
-            margin-top: auto;
-            margin-bottom: 19px;
-            font-size: 72px;
-            line-height: 88px;
-            color: #fff;
-            @extend %Montserrat-500;
-        }
-        .header-subtitle {
-            margin-bottom: auto;
-            font-size: 16px;
-            line-height: 20px;
-            color: $accent;
-            @extend %Montserrat-700;
-        }
-        .header-icon {
-            margin-bottom: 62px;
-        }
+    .header-title {
+      padding-top: 130px;
+      margin-top: auto;
+      margin-bottom: 19px;
+      font-size: 72px;
+      line-height: 88px;
+      color: #fff;
+      @extend %Montserrat-500;
     }
+    .header-subtitle {
+      margin-bottom: auto;
+      font-size: 16px;
+      line-height: 20px;
+      color: $accent;
+      @extend %Montserrat-700;
+    }
+    .header-icon {
+      margin-bottom: 62px;
+    }
+  }
+}
+
+.about {
+  background-color: $bg;
+  padding: 150px 0 144px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-title {
+    @extend %title;
+    font-size: 48px;
+    align-self: flex-start;
+  }
+  &-text p {
+    max-width: 770px;
+    margin-bottom: 16px;
+  }
 }
 
 @import "media";
