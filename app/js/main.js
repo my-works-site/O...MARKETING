@@ -1,3 +1,3 @@
-$(function() {
-    console.log(9 - 1);
-})
+$(function () {
+  var mixer = mixitup(".portfolio__content");
+});
