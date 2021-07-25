@@ -324,7 +324,65 @@
 }
 
 .slider-blog {
+  padding: 115px 0;
   background-color: $bg;
+  &__item-title {
+    max-width: 655px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    color: $title;
+    @extend %Montserrat-700;
+  }
+  &__item {
+    padding: 190px 0;
+  }
+  &__item-descr {
+    max-width: 585px;
+  }
+  .slick-dots {
+    display: flex;
+    button {
+      padding: 0;
+      font-size: 0;
+      border: none;
+      opacity: 0.4;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: $title;
+    }
+    li + li {
+      margin-left: 13px;
+    }
+  }
+  .slick-active {
+    button {
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+  }
+  .slick-prev {
+    left: -95px;
+  }
+  .slick-next {
+    right: -95px;
+  }
 }
 
 @import "media";
