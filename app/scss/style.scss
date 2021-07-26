@@ -385,4 +385,80 @@
   }
 }
 
+.team {
+  padding: 120px 0 130px;
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__name {
+    padding: 35px 0 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    @extend %Montserrat-700;
+  }
+  &__prof {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.pricing {
+  padding: 145px 0 162px;
+  background-color: $bg;
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul.pricing__item {
+    text-align: center;
+    background-color: #fff;
+    padding: 24px 25px 50px;
+    width: 370px;
+  }
+  &__item {
+    li {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 30px;
+      &.pricing__item-name {
+        @extend %Montserrat-700;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      &.pricing__item-num {
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 109px;
+        sup {
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 54px;
+        }
+      }
+      a.pricing__item-link {
+        color: $title;
+        @extend %Montserrat-700;
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}
+
 @import "media";
