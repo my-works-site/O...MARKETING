@@ -461,4 +461,123 @@
   }
 }
 
+.clients {
+  padding: 70px 0 95px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.connection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    padding: 145px 0 160px;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+}
+
+.form {
+  max-width: 570px;
+  input,
+  textarea {
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 2px solid $default;
+    width: 100%;
+    display: block;
+
+    &::placeholder {
+      color: #b8b8b8;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 3.70909px;
+      text-transform: uppercase;
+      font-weight: 300px;
+    }
+  }
+  textarea {
+    min-height: 140px;
+    resize: none;
+  }
+  button {
+    padding: 17px 70px 15px;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    @extend %Montserrat-700;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: $title;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $accent;
+      color: $default;
+    }
+  }
+}
+
+.footer {
+  &__top {
+    padding: 110px 10px 60px;
+    text-align: center;
+    background-color: #333;
+  }
+  &__logo {
+    padding: 0 35px 4px;
+    border-bottom: 2px solid $accent;
+    display: inline-block;
+    margin-bottom: 70px;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    &-link {
+      padding: 0 15px;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+    }
+  }
+  &__contact {
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 60px;
+    a {
+      display: block;
+      margin: 10px 0;
+      color: #fff;
+    }
+  }
+  .go-top {
+    display: inline-block;
+  }
+
+  .footer__copy {
+    padding: 40px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #cccccc;
+    text-align: center;
+    background: #2a2c2b;
+  }
+}
+
 @import "media";
