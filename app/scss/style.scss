@@ -86,7 +86,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .about-title {
+  &__title {
     @extend %title;
     font-size: 48px;
     align-self: flex-start;
@@ -142,7 +142,7 @@
     margin-bottom: 25px;
   }
 
-  .expertise__items {
+  &__items {
     display: flex;
     justify-content: space-between;
   }
