@@ -4,7 +4,7 @@
 @import "libs";
 @import "global";
 
-.header-top__inner {
+.header__top-inner {
   padding-bottom: 29px;
   display: flex;
   justify-content: space-between;
@@ -15,10 +15,11 @@
   display: flex;
   &__item + &__item {
     margin-left: 32px;
+    margin-bottom: 15px;
   }
   &__link {
     padding: 0 9px 9px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 14px;
     text-transform: uppercase;
     color: #373a39;
@@ -29,6 +30,19 @@
       border-bottom: 1px solid $accent;
     }
   }
+}
+
+.logo {
+  position: relative;
+  z-index: 12;
+  path,
+  rect {
+    transition: all 0.5s ease 0s;
+  }
+}
+
+.header__burger {
+  display: none;
 }
 
 .header-content {

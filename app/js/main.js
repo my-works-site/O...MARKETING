@@ -1,5 +1,15 @@
 $(function () {
-  var mixer = mixitup(".portfolio__content");
+  // var mixer = mixitup(".portfolio__content");
+
+  $(".header__burger").click(function (event) {
+    $(".header__burger, .menu, .header__top").toggleClass("active");
+    $("body").toggleClass("lock"); // remove scroll when burger menu is active
+  });
+
+  $(".menu").click(function () {
+    $(".header__burger, .menu, .header__top").removeClass("active");
+    $("body").removeClass("lock"); // close burger menu after click
+  });
 
   $(".slider-blog__inner").slick({
     dots: true,
