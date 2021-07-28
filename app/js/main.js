@@ -1,5 +1,5 @@
 $(function () {
-  // var mixer = mixitup(".portfolio__content");
+  var mixer = mixitup(".portfolio__content");
 
   $(".header__burger").click(function (event) {
     $(".header__burger, .menu, .header__top").toggleClass("active");

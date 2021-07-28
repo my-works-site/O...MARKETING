@@ -36,6 +36,17 @@
       margin-bottom: 40px;
     }
   }
+
+  .magic {
+    background-image: none;
+    &__inner {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
