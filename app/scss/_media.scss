@@ -25,7 +25,8 @@
   .expertise,
   .magic__inner,
   .portfolio,
-  .slider-blog {
+  .slider-blog,
+  .team {
     padding: 75px 0;
   }
 
@@ -46,6 +47,14 @@
     &__inner {
       max-width: 100%;
       margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .team {
+    &__items {
+      column-gap: 20px;
     }
     &__title {
       margin-bottom: 50px;
@@ -250,6 +259,21 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .team {
+    &__items {
+      display: block;
+    }
+    &__item {
+      margin-bottom: 25px;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
 @media (max-width: 440px) {
   .title {
     font-size: 28px;
