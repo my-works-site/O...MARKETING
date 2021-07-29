@@ -211,15 +211,15 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 100px;
   }
   &__filter-btn {
-    margin-right: 40px;
+    margin-right: 65px;
   }
   &__btn {
     padding: 0 4px 5px;
-    margin-right: 25px;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
@@ -228,6 +228,9 @@
     border: none;
     background-color: transparent;
     outline-color: $accent;
+  }
+  &__btn + &__btn {
+    margin-left: 25px;
   }
 
   .mixitup-control-active {
