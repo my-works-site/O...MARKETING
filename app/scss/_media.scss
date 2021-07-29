@@ -1,3 +1,20 @@
+@media (max-width: 1400px) {
+  .slider-blog {
+    &__item {
+      padding: 120px 60px;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+    ul.slick-dots {
+      margin-left: 60px;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .title {
     font-size: 48px;
@@ -7,7 +24,8 @@
   .about,
   .expertise,
   .magic__inner,
-  .portfolio {
+  .portfolio,
+  .slider-blog {
     padding: 75px 0;
   }
 
@@ -219,8 +237,20 @@
       flex-wrap: wrap;
     }
   }
+  .slider-blog {
+    &__item {
+      padding: 120px 0;
+    }
+    ul.slick-dots {
+      margin-left: 0;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .title {
     font-size: 28px;
     line-height: 42px;
