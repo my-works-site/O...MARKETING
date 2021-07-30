@@ -26,7 +26,8 @@
   .magic__inner,
   .portfolio,
   .slider-blog,
-  .team {
+  .team,
+  .pricing {
     padding: 75px 0;
   }
 
@@ -58,6 +59,19 @@
     }
     &__title {
       margin-bottom: 50px;
+    }
+  }
+  .pricing {
+    &__items {
+      column-gap: 20px;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .clients {
+    &__list {
+      column-gap: 20px;
     }
   }
 }
@@ -92,6 +106,32 @@
     }
     &__filter-btn {
       margin-top: 40px;
+    }
+  }
+  .connection {
+    display: inline;
+    &__map {
+      display: none;
+    }
+  }
+  .form {
+    max-width: 100%;
+  }
+
+  .footer {
+    &__top {
+      padding-top: 75px;
+    }
+    &__logo {
+      margin-bottom: 40px;
+    }
+    &__social {
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      &-list {
+        width: 33.333%;
+        margin-bottom: 25px;
+      }
     }
   }
 }
@@ -258,6 +298,27 @@
       line-height: 32px;
     }
   }
+  .pricing {
+    &__items {
+      display: block;
+      ul.pricing__item {
+        margin: 0 auto 25px;
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+
+  .clients {
+    &__list {
+      column-gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li {
+        margin-bottom: 25px;
+      }
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -303,6 +364,13 @@
       flex-wrap: wrap;
       &-item {
         width: 100%;
+      }
+    }
+  }
+  .footer {
+    &__social {
+      &-list {
+        width: 50%;
       }
     }
   }

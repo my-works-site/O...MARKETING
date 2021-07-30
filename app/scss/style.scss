@@ -4,8 +4,17 @@
 @import "libs";
 @import "global";
 
+.header__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
 .header__top-inner {
-  padding-bottom: 29px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -46,10 +55,11 @@
 }
 
 .header-content {
+  margin-top: 91px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: calc(100vh - 93px);
+  min-height: 100vh;
   background-image: url("../images/header-bg.jpg");
   &__inner {
     display: flex;
