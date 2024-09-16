@@ -1,31 +1,45 @@
 @font-face {
-    font-family: "Raleway-Bold";
-    font-weight: 700;
-    font-style: normal;
-    src: local("Raleway-Bold"), url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
-    font-display: swap;
+  font-family: "Raleway-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Raleway-Bold"), url("../fonts/Raleway-Bold.woff2") format("woff2"),
+    url("../fonts/Raleway-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat-Bold";
-    font-weight: 700;
-    font-style: normal;
-    src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-    font-display: swap;
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "montserrat";
-    font-weight: 500;
-    font-style: normal;
-    src: local("montserrat"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff");
-    font-display: swap;
+  font-family: "montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: local("montserrat"), url("../fonts/montserrat.woff2") format("woff2"),
+    url("../fonts/montserrat.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "opensanslight";
-    font-weight: 700;
-    font-style: normal;
-    src: local("opensanslight"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
-    font-display: swap;
+  font-family: "opensanslight";
+  font-weight: 300;
+  font-style: normal;
+  src: local("opensanslight"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "opensansregular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("opensansregular"), url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-display: swap;
 }

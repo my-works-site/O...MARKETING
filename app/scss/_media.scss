@@ -1,0 +1,386 @@
+@media (max-width: 1400px) {
+  .slider-blog {
+    &__item {
+      padding: 120px 60px;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+    ul.slick-dots {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 48px;
+    line-height: 65px;
+  }
+
+  .about,
+  .expertise,
+  .magic__inner,
+  .portfolio,
+  .slider-blog,
+  .team,
+  .pricing {
+    padding: 75px 0;
+  }
+
+  .about {
+    &__inner {
+      display: block;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+    &-text p {
+      max-width: 100%;
+    }
+  }
+
+  .magic {
+    background-image: none;
+    &__inner {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .team {
+    &__items {
+      column-gap: 20px;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .pricing {
+    &__items {
+      column-gap: 20px;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+  .clients {
+    &__list {
+      column-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .expertise {
+    &__inner {
+      display: block;
+      margin-bottom: 75px;
+    }
+    &__info {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__items {
+      display: block;
+    }
+    &__item {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .portfolio {
+    &__content {
+      column-count: 3;
+      margin-bottom: 40px;
+    }
+    &__top {
+      display: block;
+      margin-bottom: 50px;
+    }
+    &__filter-btn {
+      margin-top: 40px;
+    }
+  }
+  .connection {
+    display: inline;
+    &__map {
+      display: none;
+    }
+  }
+  .form {
+    max-width: 100%;
+  }
+
+  .footer {
+    &__top {
+      padding-top: 75px;
+    }
+    &__logo {
+      margin-bottom: 40px;
+    }
+    &__social {
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      &-list {
+        width: 33.333%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .menu {
+    position: fixed;
+    overflow: auto;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    background-color: #fff;
+    flex-direction: column;
+    &-list {
+      display: none;
+    }
+    &.active {
+      background-color: #242121;
+    }
+  }
+
+  .header__top {
+    &.active {
+      .logo {
+        path,
+        rect {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .header-content {
+    .header-title {
+      font-size: 50px;
+      line-height: 65px;
+      margin-bottom: 10px;
+    }
+    .header-subtitle {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__burger {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    z-index: 12;
+    top: 35px;
+    right: 35px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    top: 8px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::after,
+  .header__burger::before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .active::before {
+    transform: rotate(45deg);
+    top: 8px;
+    background-color: rgb(255, 255, 255);
+  }
+  .active::after {
+    transform: rotate(-45deg);
+    bottom: 8px;
+    background-color: rgb(255, 255, 255);
+  }
+  .active span {
+    transform: scale(0);
+  }
+
+  .menu .lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    .menu-list__item {
+      margin-left: 0;
+      margin-bottom: 25px;
+      .menu-list__link {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+  .menu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .menu.active {
+    left: 0;
+    top: 0;
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+  }
+
+  .portfolio {
+    &__content {
+      column-count: 2;
+    }
+    &__btn {
+      display: block;
+
+      margin-bottom: 30px;
+    }
+    &__btn + &__btn {
+      margin-left: 0;
+    }
+    &__add {
+      margin-bottom: 40px;
+    }
+    .blockquote {
+      margin-bottom: 40px;
+      padding: 0 10px;
+    }
+    &__video {
+      margin-bottom: 40px;
+    }
+    &__numbers {
+      flex-wrap: wrap;
+    }
+  }
+  .slider-blog {
+    &__item {
+      padding: 120px 0;
+    }
+    ul.slick-dots {
+      margin-left: 0;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  .pricing {
+    &__items {
+      display: block;
+      ul.pricing__item {
+        margin: 0 auto 25px;
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+
+  .clients {
+    &__list {
+      column-gap: 20px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      li {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .team {
+    &__items {
+      display: block;
+    }
+    &__item {
+      margin-bottom: 25px;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .header-content {
+    .header-title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .header-subtitle {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  .about {
+    &__title {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+
+  .portfolio {
+    &__numbers {
+      flex-wrap: wrap;
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+  .footer {
+    &__social {
+      &-list {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .expertise {
+    &__item {
+      padding-left: 0;
+      padding-top: 60px;
+    }
+  }
+}
